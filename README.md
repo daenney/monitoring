@@ -4,11 +4,11 @@ This is my home monitoring stack (ya really, for fun).
 
 It consists of:
 
-  * [Prometheus][https://prometheus.io]
-  * [Node Exporter][https://github.com/prometheus/node_exporter]
-  * [SNMP Exporter][https://github.com/prometheus/snmp_exporter]
-  * [cAdvisor][https://github.com/google/cadvisor]
-  * [Grafana][http://grafana.org]
+  * [Prometheus](https://prometheus.io)
+  * [Node Exporter](https://github.com/prometheus/node_exporter)
+  * [SNMP Exporter](https://github.com/prometheus/snmp_exporter)
+  * [cAdvisor](https://github.com/google/cadvisor)
+  * [Grafana](http://grafana.org)
 
 In order to make my life simpler and upgrades less of a pain I don't run these
 things directly on the host, they're run through Docker containers. As such
