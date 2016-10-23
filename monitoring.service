@@ -1,0 +1,12 @@
+[Unit]
+Description=Monitoring Systems
+After=docker.service
+Requires=docker.service
+
+[Service]
+ExecStartPre=-/usr/local/bin/docker-compose -f /etc/docker/compose/monitoring/docker-compose.yml down
+ExecStart=-/usr/local/bin/docker-compose -f /etc/docker/compose/monitoring/docker-compose.yml up
+ExecStop=-/usr/local/bin/docker-compose -f /etc/docker/compose/monitoring/docker-compose.yml stop
+
+[Install]
+WantedBy=multi-user.target
